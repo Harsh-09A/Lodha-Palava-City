@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raymond Realty</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.webp" sizes="16x16" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo/logo.png" alt="Logo" height="60px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#highlights_section">
+                  <i class="fa-solid fa-star nav-icon"></i>
+                  <span class="d-sm-inline"> Project Highlights </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#configuration_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Configuration </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slider Section -->
+      <section id="slider_section">
+        <!-- Desktop Slider -->
+        <div
+          id="carousel-Indicators"
+          class="carousel slide desktop-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/banner/desktop_banner1.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/desktop_banner2.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Banner2" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Mobile Slider -->
+        <div
+          id="carousel-Indicators-Mobile"
+          class="carousel slide mobile-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators-Mobile"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators-Mobile"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/banner/mobile_banner1.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/banner/mobile_banner2.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Banner2" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-Indicators-Mobile"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-Indicators-Mobile"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--Overview Section  -->
+      <section id="overview_section" class="container p-4 mt-3">
+        <h3 class="section-heading text-center text-uppercase">PALAVA CITY</h3>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 overview_img">
+            <img
+              class="img-fluid"
+              src="img/banner/desktop_banner1.jpg"
+              alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="overview-para mt-3">
+              Palava, a place designed to raise your expectations of city life,
+              is built to provide premium living, on par with the world’s finest
+              cities.This well-integrated visionary city sprawling across 4500
+              acres of land is crafted by India's leading brand Lodha,
+              seamlessly blending modern urban living with nature. Nestled a
+              short drive away from Dombivli, at the economic triangle of Thane,
+              Navi Mumbai and Kalyan, Palava epitomizes the essence of India’s
+              next metropolis. The city embodies an international standard of
+              living with meticulously planned infrastructure, world-class
+              amenities, and serene green spaces and waterbodies - ensuring an
+              exceptional living every day.
+            </p>
+            <button
+              class="btn btn-outline-danger download_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Residential Section -->
+      <section id="residential_section" class="container p-4 mt-3">
+        <div class="container">
+          <div>
+            <h3 class="section-heading">Residential</h3>
+          </div>
+
+          <div class="container properties_container">
+            <div class="row prices_row">
+              <!--  -->
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property1_Lodha_Villa_Royale.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Lodha Villa Royale</h5>
+                    <p class="card-text">
+                      Your exclusive land in a gated community within MMR - an
+                      Elite Collection offering.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property2_Lodha_Serenity.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Lodha Serenity</h5>
+                    <p class="card-text">
+                      A collection of premium 3, 4 bed and larger residences in
+                      Palava townships of Lodha.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property3_Casa_Olivia.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Casa Olivia</h5>
+                    <p class="card-text">
+                      A Central Avenue that offers many shopping outlets and
+                      dining options to choose from.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property4_Casa_Premier.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Casa Premier</h5>
+                    <p class="card-text">
+                      Where you get views of breath-taking greens from grand
+                      balconies and all the amenities you'll need.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Commercial Section -->
+      <section id="commercial_section" class="container p-4 mt-3">
+        <div class="container">
+          <div>
+            <h3 class="section-heading">Commercial</h3>
+          </div>
+
+          <div class="container properties_container">
+            <div class="row prices_row">
+              <!--  -->
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property6_Lodha_IThink.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Lodha iThink</h5>
+                    <p class="card-text">
+                      Lodha iThink, Palava offers OC-ready offices, designed
+                      exclusively for growing businesses.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card">
+                  <img
+                    src="img/properties/property7_Lodha_Codename_Game_Changer.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..." />
+                  <div class="card-body position-relative">
+                    <div>
+                      <span
+                        class="position-absolute translate-middle badge rounded-pill price_badge">
+                        1.54 Cr* Onwards
+                      </span>
+                    </div>
+                    <h5 class="card-title">Lodha Codename Game Changer</h5>
+                    <p class="card-text">
+                      These offices combines space-efficient offices and retail
+                      spaces with a sense of prestige.
+                    </p>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal"
+                      class="btn btn-primary price_btn">
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container text-center text-white">
+        <div class="d-flex justify-content-center">
+          <div class="qrcode">
+            <img src="img/qr/qr1.png" class="" />
+          </div>
+        </div>
+        <div>
+          <p>
+            The project is registered via MahaRERA Registration no.
+            P51700015660; available on
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              style="color: #fff; text-decoration: none">
+              maharera.mahaonline.gov.in </a
+            >under registered projects.
+          </p>
+
+          <div class="text-center">
+            <p class="contact_details">
+              <b> Site Address:-</b> Palava City by LODHA, Kalyan - Shilphata
+              Rd, near Lodha World School, Casa Bella Gold, Dombivli, Nilje
+              Gaon, Maharashtra 421204
+              <br />
+              <b> Contact No:-</b> +91 999999999
+              <br />
+              <b> Email Address:-</b> support@palava.com
+            </p>
+          </div>
+
+          <div>
+            <span>
+              Disclaimer : The information provided on this website is intended
+              exclusively for informational purposes and managed by a RERA
+              authorized real estate agent namely Mr. -----------. This Website
+              Is Not An Official Site And It Belongs To The Authorized Marketing
+              Partner For Information Purpose Only And Does Not Constitute An
+              Offer To Avail Any Service.
+            </span>
+            <span id="dots20" style="display: inline"></span>
+            <span id="more20" style="display: none">
+              <span>
+                The pricing information presented on this website is subject to
+                alteration without advance notification, and the assurance of
+                property availability cannot be guaranteed. The images showcased
+                on this website are for representational purposes only and may
+                not accurately reflect the actual properties. Please Note That
+                This Is The Official Website Of An Authorized Marketing Partner.
+                We May Share Data With Real Estate Regulatory Authority (RERA)
+                Registered Brokers/Companies For Further Processing As Required.
+                We May Also Send Updates And Information To The Mobile Number Or
+                Email ID Registered With Us. All rights reserved. The content,
+                design, and information on this website are protected by
+                copyright and other intellectual property rights. Any
+                unauthorized use or reproduction of the content may violate
+                applicable laws. For accurate and up-to-date information
+                regarding services, pricing, availability, and any other
+                details, it is recommended to contact us directly through the
+                provided contact information on this website. Thank you for
+                visiting our website.
+              </span>
+            </span>
+            <br />
+            <span
+              class="read_more2"
+              onclick="toggleContent('dots20','more20', 'myBtn20')"
+              id="myBtn20">
+              Read More
+            </span>
+          </div>
+
+          <p class="pb-4 pt-2">
+            <a
+              href="privacy_policy.html"
+              target="_blank"
+              style="text-decoration: none">
+              Privacy Policy
+            </a>
+            |
+            <a
+              href="termsandcondition.html"
+              target="_blank"
+              style="text-decoration: none">
+              Terms And Conditions
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

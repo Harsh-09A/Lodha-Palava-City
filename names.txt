@@ -1,0 +1,8 @@
+property1_Lodha_Villa_Royale
+property2_Lodha_Serenity
+property3_Casa_Olivia
+property4_Casa_Premier
+property5_Ready_Homes
+
+property6_Lodha_IThink
+property7_Lodha_Codename_Game_Changer
